@@ -11,3 +11,39 @@ PS C:\Users\Vaibhav Katta\OneDrive\Documents\EDA_LAB\25EC01049> git log --onelin
 * c9b1025 Update print statement in check_setup.py (1)
 * b8450f4 Add README with setup verification
 * 92a79d7 Add setup check and initial ID-VD plotting script
+# E4
+![E4](E4.png)
+PS C:\Users\Vaibhav Katta\OneDrive\Documents\EDA_LAB\25EC01049> git log --oneline --graph --all
+*   9b0455f (HEAD -> main) Resolved merge conflict in check_setup.py
+|\  
+| * a148c17 (conflict_branch) Change x-axis label to Drain Voltage
+* | 51130c6 Changes x-label to gate voltage
+|/  
+* 6628b42 (branch_check) Print roll number in check_setup.py
+* f1fc4d8 Add git log to README
+* b9b9eb3 Update print statement in check_setup.py (3)
+* d4981d7 Update print statement in check_setup.py (2)
+* c9b1025 Update print statement in check_setup.py (1)
+* b8450f4 Add README with setup verification
+* 92a79d7 Add setup check and initial ID-VD plotting script
+# E5
+06f10b2 - Added DOB
+# E6
+PS C:\Users\Vaibhav Katta\OneDrive\Documents\EDA_LAB\25EC01049> python .\read_data.py
+Columns:
+['V_GS (V)', 'V_DS (V)', 'I_D (mA)']
+
+Shape:
+(44, 3)
+
+Description:
+       V_GS (V)   V_DS (V)   I_D (mA)
+count  44.00000  44.000000  44.000000
+mean    3.50000   2.500000   7.841591
+std     1.13096   1.599418   7.904722
+min     2.00000   0.000000   0.000000
+25%     2.75000   1.000000   0.557500
+50%     3.50000   2.500000   4.605000
+75%     4.25000   4.000000  12.255000
+max     5.00000   5.000000  24.150000g
+
