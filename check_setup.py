@@ -17,4 +17,4 @@ plt.show()
 plt.grid(True)
 plt.show()
 
-print("Setup check completed - Version 1")
+print("Setup check completed - Version 2")
