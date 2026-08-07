@@ -14,3 +14,7 @@ plt.xlabel("x")
 plt.ylabel("x squared")
 plt.grid(True)
 plt.show()
+plt.grid(True)
+plt.show()
+
+print("Setup check completed - Version 1")
