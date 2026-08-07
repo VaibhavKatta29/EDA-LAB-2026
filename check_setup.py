@@ -23,3 +23,4 @@ plt.show()
 
 print("Setup check completed - Version 3")
 print("Roll Number: 25EC01049")
+print("DOB: 23/05/2008")
