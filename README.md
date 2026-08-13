@@ -89,3 +89,26 @@ The peak transconductance was found to be 12.72 mS at V_GS = 5.0 V.
 
 ![Transconductance](gm_transfer.png)
 
+
+# E10
+## Q10 – Threshold Voltage Extraction
+
+### Observation
+
+For V_DS = 5 V, the drain current I_D was found to be very small at low V_GS, showing that the MOSFET is below threshold. As V_GS increases beyond the threshold region, I_D increases suddenly.
+
+The plot of √I_D versus V_GS shows an approximately linear region at higher V_GS. A linear fit was performed using this region and extrapolated to √I_D = 0. The x-intercept gives the threshold voltage:
+
+V_T ≈ 1.35 V
+
+The I_D versus V_GS plot also shows the expected increase in drain current after the threshold voltage is reached.
+
+### Plots
+
+#### √I_D vs V_GS – Linear Extrapolation
+
+![Q10 Threshold Extraction](threshold_extraction.png)
+
+#### I_D vs V_GS
+
+![Q10 ID vs VGS](q10_ID_VGS.png)
