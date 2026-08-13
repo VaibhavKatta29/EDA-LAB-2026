@@ -75,3 +75,17 @@ output resistance r  =  1.5 k(ohms)
 
 ![Differential Output Conductance](gd_vds.png)
 
+# E9
+# E9
+## Transconductance
+
+The transfer characteristics was plotted for different values of V_DS .
+The transconductance was calculated using:
+g_m = dI_D / dV_GS using np.gradient().
+
+The peak transconductance was found to be 12.72 mS at V_GS = 5.0 V.
+
+### Output
+
+![Transconductance](gm_transfer.png)
+
