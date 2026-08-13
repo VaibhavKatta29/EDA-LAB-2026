@@ -46,4 +46,15 @@ min     2.00000   0.000000   0.000000
 50%     3.50000   2.500000   4.605000
 75%     4.25000   4.000000  12.255000
 max     5.00000   5.000000  24.150000g
+# E7
 
+## MOSFET ID-VDS Characteristics
+
+Loaded the MOSFET CSV data using pandas and plotted the
+ID-VDS characteristics for different VGS values.
+
+The plot shows ID on the y-axis and VDS on the x-axis for
+VGS = 2 V, 3 V, 4 V and 5 V.
+
+### Output
+![ID-VDS Family](ID_VDS_Family.png)
