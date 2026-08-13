@@ -58,3 +58,20 @@ VGS = 2 V, 3 V, 4 V and 5 V.
 
 ### Output
 ![ID-VDS Family](ID_VDS_Family.png)
+
+# E8
+## Differential Output Conductance
+
+The differential output conductance was calculated using:
+g_d = dI_D / dV_DS
+using `np.gradient()` for the numerical derivative.
+
+The conductance was plotted for different V_GS values.
+
+For the highest V_Gs = 5V, the ouput conductance almost saturated V_DS = 3.5V and g_d=0.65mS and r=1/g_d
+output resistance r  =  1.5 k(ohms)
+
+### Output
+
+![Differential Output Conductance](gd_vds.png)
+
