@@ -114,8 +114,23 @@ The I_D versus V_GS plot also shows the expected increase in drain current after
 ![Q10 ID vs VGS](q10_ID_VGS.png)
 
 
-# E10 
+# E11 
 I-V graph was plotted for diode at different ambient temperatures 0,25,50 and 75. 
 Voltage V was plotted on X-axis and current I on Y-axis. 
 the plot was saved at 350pi
 ![I-V_temp charactertistics ](diode_iv.png)
+
+# E12
+I-VDS characteristics curve was for VGS=1,2,3 for SPICE level 1 and 3 models
+In both the graphs, I was linearly increasing with V_DS for small voltages but later it entered into saturation region.
+SPICE level 3 model characteristics differ slightly 
+
+### Output
+
+#### SPICE Level 1
+
+![SPICE Level 1](E12_MOSFET_lvl_1_Model.png)
+
+#### SPICE Level 3
+
+![SPICE Level 3](E12_MOSFET_lvl_3_Model.png)
