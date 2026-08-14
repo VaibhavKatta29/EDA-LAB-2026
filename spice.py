@@ -15,7 +15,7 @@ alpha = 1.1
 vds = np.linspace(0, 4, 100)
 vgs_list = [1, 2, 3]
 
-plt.figure(1)
+plt.figure()
 for vgs in vgs_list:
     id_l1 = np.where(vds < (vgs - Vt),
                      beta * (((vgs - Vt) * vds - 0.5 * vds**2)*(1+l*vds)),
@@ -29,18 +29,39 @@ plt.legend()
 plt.grid(True)
 plt.savefig('E12_MOSFET_lvl_1_Model', dpi=350)
 
-plt.figure(2)
+plt.figure(figsize=(10, 6))
 
+# SPICE Level 1
 for vgs in vgs_list:
-    id_l1 = np.where(vds < (vgs - Vt)/alpha,
-                     beta * ((vgs - Vt) * vds - alpha*0.5 * vds**2)*(1+l*vds),
-                     0.5 * (beta/alpha) * (vgs - Vt)**2*(1+l*(vds)))
-    id_l1 = np.maximum(id_l1, 0)
-    plt.plot(vds, id_l1, label=f'VGS={vgs}V (SPICE Level 3)')
+    id_l1 = np.where(vds < (vgs - Vt),
+                     beta * (((vgs - Vt) * vds - 0.5 * vds**2) * (1 + l*vds)),
+                     0.5 * beta * (vgs - Vt)**2 * (1 + l*vds))
 
-plt.xlabel('Vds (V)')
-plt.ylabel('Id (A)')
+    id_l1 = np.maximum(id_l1, 0)
+
+    plt.plot(vds, id_l1,
+             label=f'VGS={vgs}V (SPICE Level 1)')
+
+
+# SPICE Level 3
+for vgs in vgs_list:
+    id_l3 = np.where(vds < (vgs - Vt)/alpha,
+                     beta * ((vgs - Vt) * vds - alpha*0.5 * vds**2) * (1 + l*vds),
+                     0.5 * (beta/alpha) * (vgs - Vt)**2 * (1 + l*vds))
+
+    id_l3 = np.maximum(id_l3, 0)
+
+    plt.plot(vds, id_l3,
+             linestyle='--',
+             label=f'VGS={vgs}V (SPICE Level 3)')
+
+
+plt.xlabel('VDS (V)')
+plt.ylabel('ID (A)')
+plt.title('MOSFET ID-VDS Characteristics')
 plt.legend()
 plt.grid(True)
-plt.savefig('E12_MOSFET_lvl_3_Model', dpi=350)
+plt.tight_layout()
+
+plt.savefig('E12_MOSFET_Level1_Level3.png', dpi=350)
 plt.show()
