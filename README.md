@@ -112,3 +112,10 @@ The I_D versus V_GS plot also shows the expected increase in drain current after
 #### I_D vs V_GS
 
 ![Q10 ID vs VGS](q10_ID_VGS.png)
+
+
+# E10 
+I-V graph was plotted for diode at different ambient temperatures 0,25,50 and 75. 
+Voltage V was plotted on X-axis and current I on Y-axis. 
+the plot was saved at 350pi
+![I-V_temp charactertistics ](diode_iv.png)
