@@ -134,6 +134,8 @@ SPICE level 3 model characteristics differ slightly
 #### SPICE Level 3
 
 ![SPICE Level 3](E12_MOSFET_lvl_3_Model.png)
+#### SPICE Level 1_3
+![SPICE Level 3](E12_MOSFET_Level1_Level3.png)
 
 # Bonus question
 # E13
