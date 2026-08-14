@@ -118,7 +118,7 @@ The I_D versus V_GS plot also shows the expected increase in drain current after
 I-V graph was plotted for diode at different ambient temperatures 0,25,50 and 75. 
 Voltage V was plotted on X-axis and current I on Y-axis. 
 the plot was saved at 350pi
-![I-V_temp charactertistics ](diode_iv.png)
+![I-V_temp charactertistics ](diode_iv_char.png)
 
 # E12
 I-VDS characteristics curve was for VGS=1,2,3 for SPICE level 1 and 3 models
@@ -134,3 +134,42 @@ SPICE level 3 model characteristics differ slightly
 #### SPICE Level 3
 
 ![SPICE Level 3](E12_MOSFET_lvl_3_Model.png)
+
+# Bonus question
+# E13
+
+## Diode Characteristics
+
+The Shockley diode equation was used to generate synthetic diode $I_D$-$V_D$ data for three ideality factors:
+
+- $n = 1.0$
+- $n = 1.5$
+- $n = 2.0$
+
+The reverse saturation current was kept fixed at $I_S = 1 \times 10^{-12}$ A and the diode voltage was swept from 0 V to 0.8 V in steps of 0.01 V.
+
+### Observation
+
+The I_D-V_D characteristics show that the diode current increases exponentially with forward voltage. Increasing the ideality factor n results in a lower current for the same diode voltage.
+
+The logarithmic plot makes the large range of diode currents easier to observe compared with the linear plot.
+
+The small-signal diode conductance was calculated numerically using:
+
+g_d = dI_D/dV_D
+
+and plotted on a logarithmic y-axis for all three ideality factors.
+
+### Output
+
+#### Linear I-V Characteristics
+
+![Diode I-V Characteristics](diode_iv.png)
+
+#### Logarithmic I-V Characteristics
+
+![Diode I-V Characteristics - Log Scale](diode_iv_log.png)
+
+#### Small-Signal Conductance
+
+![Diode Small-Signal Conductance](diode_gd.png)

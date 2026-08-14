@@ -27,6 +27,6 @@ plt.grid(True, linestyle="--", alpha=0.6)
 plt.tight_layout()
 
 # Save at the required resolution
-plt.savefig("diode_iv.png", dpi=350)
+plt.savefig("diode_iv_char.png", dpi=350)
 
 plt.show()
